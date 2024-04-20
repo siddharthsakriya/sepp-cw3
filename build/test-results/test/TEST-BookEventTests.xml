@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BookEventTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-31T17:01:05" hostname="LAPTOP-NA7I6PLD" time="1.29">
+  <properties/>
+  <testcase name="bookTicketedEventMultiBookings()" classname="BookEventTests" time="1.29"/>
+  <system-out><![CDATA[bookTicketedEventMultiBookings()
+2023-03-31 18:01:05.970 [Test worker] INFO  com.graphhopper.GraphHopper - version 6.0|2022-09-13T08:51:05Z (9,21,6,5,2,9)
+2023-03-31 18:01:05.976 [Test worker] INFO  com.graphhopper.GraphHopper - graph car,bike,foot,wheelchair|RAM_STORE|2D|no_turn_cost|nodes:9,edges:21,geometry:6,location_index:5,string_index:2,nodesCH:0,shortcuts:9, details:edges: 1?462?191(56MB), nodes: 1?211?545(14MB), bounds: -8.584882,9.9755886,50.1188907,62.0079024, name:(3MB), geo:6?665?024(26MB)
+?[32mRegisterStaffCommand({password=***, email=bring-in-the-cash@pawsforawwws.org}) => REGISTER_STAFF_SUCCESS?[0m
+?[32mRegisterStaffCommand({password=***, email=bring-in-the-cash@pawsforawwws.org}) => USER_LOGIN_SUCCESS?[0m
+?[32mCreateEventCommand({organiser=Staff, eventNumber=1, title=Puppies against depression}) => CREATE_EVENT_SUCCESS?[0m
+?[32mLogoutCommand => USER_LOGOUT_SUCCESS?[0m
+?[32mRegisterConsumerCommand({password=***, address=55.94872684464941 -3.199892044473183, phoneNumber=01324456897, name=Chihuahua Fan, email=i-would-never-steal-a@dog.xd}) => REGISTER_CONSUMER_SUCCESS?[0m
+?[32mRegisterConsumerCommand({password=***, email=i-would-never-steal-a@dog.xd}) => USER_LOGIN_SUCCESS?[0m
+?[32mListEventsCommand({eventList=[Event{eventNumber=1, title='Puppies against depression', type=Theatre, numTicketsCap=5, ticketPriceInPence=0, venueAddress='55.94368888764689 -3.1888246174917114', description='Please be prepared to pay 2.50 pounds on entry', startDateTime=2023-03-31T19:01:06.301446400, endDateTime=2023-03-31T20:01:06.301446400, tags=model.EventTagCollection@7e0c49d4, reviews=[], status=ACTIVE, numTicketsLeft=5}], searchDate=null, activeEventsOnly=false, userEventsOnly=false}) => LIST_EVENTS_SUCCESS?[0m
+?[32mBookEventCommand({numTicketsRequested=3, eventNumber=1}) => BOOK_EVENT_SUCCESS?[0m
+?[32mBookEventCommand({numTicketsRequested=2, eventNumber=1}) => BOOK_EVENT_SUCCESS?[0m
+---
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

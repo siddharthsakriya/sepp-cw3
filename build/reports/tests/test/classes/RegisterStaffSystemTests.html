@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class RegisterStaffSystemTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class RegisterStaffSystemTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; RegisterStaffSystemTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.662s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">RegisterStaffNoEmail()</td>
+<td class="success">0.183s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">RegisterStaffNoPassword()</td>
+<td class="success">0.178s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">RegisterStaffNoSecret()</td>
+<td class="success">0.131s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">RegisterStaffWithSameEmail()</td>
+<td class="success">0.412s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">RegisterUserLoggedIn()</td>
+<td class="success">0.331s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">RegisterValidStaff()</td>
+<td class="success">0.427s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>RegisterValidStaff()
+2023-04-04 19:53:17.642 [Test worker] INFO  com.graphhopper.GraphHopper - version 6.0|2022-09-13T08:51:05Z (9,21,6,5,2,9)
+2023-04-04 19:53:17.642 [Test worker] INFO  com.graphhopper.GraphHopper - graph car,bike,foot,wheelchair|RAM_STORE|2D|no_turn_cost|nodes:9,edges:21,geometry:6,location_index:5,string_index:2,nodesCH:0,shortcuts:9, details:edges: 1?462?191(56MB), nodes: 1?211?545(14MB), bounds: -8.584882,9.9755886,50.1188907,62.0079024, name:(3MB), geo:6?665?024(26MB)
+?[32mRegisterStaffCommand({password=***, email=basedBadger@gmail.com}) =&gt; REGISTER_STAFF_SUCCESS?[0m
+?[32mRegisterStaffCommand({password=***, email=basedBadger@gmail.com}) =&gt; USER_LOGIN_SUCCESS?[0m
+---
+RegisterStaffNoEmail()
+2023-04-04 19:53:18.076 [Test worker] INFO  com.graphhopper.GraphHopper - version 6.0|2022-09-13T08:51:05Z (9,21,6,5,2,9)
+2023-04-04 19:53:18.076 [Test worker] INFO  com.graphhopper.GraphHopper - graph car,bike,foot,wheelchair|RAM_STORE|2D|no_turn_cost|nodes:9,edges:21,geometry:6,location_index:5,string_index:2,nodesCH:0,shortcuts:9, details:edges: 1?462?191(56MB), nodes: 1?211?545(14MB), bounds: -8.584882,9.9755886,50.1188907,62.0079024, name:(3MB), geo:6?665?024(26MB)
+?[33mRegisterStaffCommand({password=***, secret=***, email=}) =&gt; USER_REGISTER_FIELDS_CANNOT_BE_NULL?[0m
+---
+RegisterStaffWithSameEmail()
+2023-04-04 19:53:18.244 [Test worker] INFO  com.graphhopper.GraphHopper - version 6.0|2022-09-13T08:51:05Z (9,21,6,5,2,9)
+2023-04-04 19:53:18.244 [Test worker] INFO  com.graphhopper.GraphHopper - graph car,bike,foot,wheelchair|RAM_STORE|2D|no_turn_cost|nodes:9,edges:21,geometry:6,location_index:5,string_index:2,nodesCH:0,shortcuts:9, details:edges: 1?462?191(56MB), nodes: 1?211?545(14MB), bounds: -8.584882,9.9755886,50.1188907,62.0079024, name:(3MB), geo:6?665?024(26MB)
+?[32mRegisterStaffCommand({password=***, email=basedBadger@gmail.com}) =&gt; REGISTER_STAFF_SUCCESS?[0m
+?[32mRegisterStaffCommand({password=***, email=basedBadger@gmail.com}) =&gt; USER_LOGIN_SUCCESS?[0m
+?[32mLogoutCommand =&gt; USER_LOGOUT_SUCCESS?[0m
+?[33mRegisterStaffCommand({email=basedBadger@gmail.com}) =&gt; USER_REGISTER_EMAIL_ALREADY_REGISTERED?[0m
+---
+RegisterStaffNoPassword()
+2023-04-04 19:53:18.667 [Test worker] INFO  com.graphhopper.GraphHopper - version 6.0|2022-09-13T08:51:05Z (9,21,6,5,2,9)
+2023-04-04 19:53:18.667 [Test worker] INFO  com.graphhopper.GraphHopper - graph car,bike,foot,wheelchair|RAM_STORE|2D|no_turn_cost|nodes:9,edges:21,geometry:6,location_index:5,string_index:2,nodesCH:0,shortcuts:9, details:edges: 1?462?191(56MB), nodes: 1?211?545(14MB), bounds: -8.584882,9.9755886,50.1188907,62.0079024, name:(3MB), geo:6?665?024(26MB)
+?[33mRegisterStaffCommand({password=***, secret=***, email=scoobydoo@gmail.com}) =&gt; USER_REGISTER_FIELDS_CANNOT_BE_NULL?[0m
+---
+RegisterStaffNoSecret()
+2023-04-04 19:53:18.799 [Test worker] INFO  com.graphhopper.GraphHopper - version 6.0|2022-09-13T08:51:05Z (9,21,6,5,2,9)
+2023-04-04 19:53:18.800 [Test worker] INFO  com.graphhopper.GraphHopper - graph car,bike,foot,wheelchair|RAM_STORE|2D|no_turn_cost|nodes:9,edges:21,geometry:6,location_index:5,string_index:2,nodesCH:0,shortcuts:9, details:edges: 1?462?191(56MB), nodes: 1?211?545(14MB), bounds: -8.584882,9.9755886,50.1188907,62.0079024, name:(3MB), geo:6?665?024(26MB)
+?[33mRegisterStaffCommand({password=***, secret=***, email=scoobydoo@gmail.com}) =&gt; USER_REGISTER_FIELDS_CANNOT_BE_NULL?[0m
+---
+RegisterUserLoggedIn()
+2023-04-04 19:53:18.891 [Test worker] INFO  com.graphhopper.GraphHopper - version 6.0|2022-09-13T08:51:05Z (9,21,6,5,2,9)
+2023-04-04 19:53:18.892 [Test worker] INFO  com.graphhopper.GraphHopper - graph car,bike,foot,wheelchair|RAM_STORE|2D|no_turn_cost|nodes:9,edges:21,geometry:6,location_index:5,string_index:2,nodesCH:0,shortcuts:9, details:edges: 1?462?191(56MB), nodes: 1?211?545(14MB), bounds: -8.584882,9.9755886,50.1188907,62.0079024, name:(3MB), geo:6?665?024(26MB)
+?[32mRegisterStaffCommand({password=***, email=bring-in-the-cash@pawsforawwws.org}) =&gt; REGISTER_STAFF_SUCCESS?[0m
+?[32mRegisterStaffCommand({password=***, email=bring-in-the-cash@pawsforawwws.org}) =&gt; USER_LOGIN_SUCCESS?[0m
+?[33mRegisterConsumerCommand({currentUser=Staff}) =&gt; USER_REGISTER_LOGGED_IN?[0m
+---
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at Apr 4, 2023, 7:53:33 PM</p>
+</div>
+</div>
+</body>
+</html>
